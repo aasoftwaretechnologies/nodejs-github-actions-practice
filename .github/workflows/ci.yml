@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test
+        run: npm test -- --detectOpenHandles
 
       - name: Build complete
         run: echo "Build successful!"
